@@ -1,0 +1,10 @@
+{
+  "name": "Capoeira FightFlow",
+  "short_name": "FightFlow",
+  "description": "Sistema para organizar campeonatos de capoeira.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#070707",
+  "theme_color": "#ff3b30",
+  "lang": "pt-BR"
+}
