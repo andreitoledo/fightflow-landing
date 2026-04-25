@@ -1,6 +1,7 @@
 import { Box, Button, Typography } from "@mui/material";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import { landingConfig } from "../../config/landingConfig";
+import { trackEvent } from "../../core/utils/tracking";
 
 export function FinalCtaSection() {
   return (
@@ -33,6 +34,11 @@ export function FinalCtaSection() {
         href={landingConfig.whatsappUrl}
         target="_blank"
         rel="noopener noreferrer"
+        onClick={() => {
+          trackEvent("whatsapp_click", {
+            location: "cta",
+          });
+        }}
         sx={{ px: 5, py: 1.6 }}
       >
         Falar no WhatsApp

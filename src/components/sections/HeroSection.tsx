@@ -10,6 +10,7 @@ import {
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import PlayCircleOutlineIcon from "@mui/icons-material/PlayCircleOutline";
 import { landingConfig } from "../../config/landingConfig";
+import { trackEvent } from "../../core/utils/tracking";
 
 const benefits = [
   "Menos retrabalho na mesa",
@@ -67,6 +68,11 @@ export function HeroSection() {
               href={landingConfig.whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => {
+                trackEvent("whatsapp_click", {
+                  location: "hero",
+                });
+              }}
               sx={{ px: 4, py: 1.5 }}
             >
               Falar no WhatsApp agora

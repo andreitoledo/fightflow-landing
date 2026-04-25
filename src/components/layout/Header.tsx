@@ -1,5 +1,6 @@
 import { Button, Stack, Typography } from "@mui/material";
 import { landingConfig } from "../../config/landingConfig";
+import { trackEvent } from "../../core/utils/tracking";
 
 export function Header() {
   return (
@@ -20,6 +21,11 @@ export function Header() {
         href={landingConfig.whatsappUrl}
         target="_blank"
         rel="noopener noreferrer"
+        onClick={() => {
+                trackEvent("whatsapp_click", {
+                  location: "header",
+                });
+              }}
       >
         Falar no WhatsApp
       </Button>
