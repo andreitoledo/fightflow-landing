@@ -29,6 +29,16 @@ export function HeroSection() {
       <Grid size={{ xs: 12, md: 7 }}>
         <Stack spacing={3}>
           <Typography
+            variant="overline"
+            color="secondary"
+            sx={{
+              fontWeight: 800,
+              letterSpacing: 1,
+            }}
+          >
+            SISTEMA PARA CAMPEONATOS DE CAPOEIRA
+          </Typography>
+          <Typography
             component="h1"
             variant="h1"
             sx={{
@@ -44,7 +54,8 @@ export function HeroSection() {
             color="text.secondary"
             sx={{ maxWidth: 620, lineHeight: 1.5 }}
           >
-            Da inscrição à arbitragem, tudo em um só lugar.
+            Pare de usar planilhas, grupos e improviso. Tenha controle total do
+            seu evento do início ao fim.
           </Typography>
 
           <Stack direction={{ xs: "column", sm: "row" }} spacing={2}>
@@ -58,7 +69,7 @@ export function HeroSection() {
               rel="noopener noreferrer"
               sx={{ px: 4, py: 1.5 }}
             >
-              Falar no WhatsApp
+              Falar no WhatsApp agora
             </Button>
 
             <Button

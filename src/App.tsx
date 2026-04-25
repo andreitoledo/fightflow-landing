@@ -4,6 +4,8 @@ import { Header } from "./components/layout/Header";
 import { FeaturesSection } from "./components/sections/FeaturesSection";
 import { FinalCtaSection } from "./components/sections/FinalCtaSection";
 import { HeroSection } from "./components/sections/HeroSection";
+import { ProblemSection } from "./components/sections/ProblemSection";
+import { HowItWorksSection } from "./components/sections/HowItWorksSection";
 
 function App() {
   return (
@@ -17,7 +19,9 @@ function App() {
       <Container maxWidth="lg">
         <Header />
         <HeroSection />
+        <ProblemSection />
         <FeaturesSection />
+        <HowItWorksSection />
         <FinalCtaSection />
         <Footer />
       </Container>
