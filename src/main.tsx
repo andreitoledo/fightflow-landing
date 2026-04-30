@@ -5,7 +5,8 @@ import App from "./App";
 import { appTheme } from "./theme/appTheme";
 
 // GA4
-const GA_MEASUREMENT_ID = "G-FX85WZZVY0"; // <-- troque pelo seu
+// const GA_MEASUREMENT_ID = "G-FX85WZZVY0"; // <-- troque pelo seu
+const GA_MEASUREMENT_ID = "G-FX85WZZY0Y"; // <-- troque pelo seu
 
 if (typeof window !== "undefined") {
   const script1 = document.createElement("script");
